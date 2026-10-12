@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Submit Request - IT Support Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            IT Support Portal
+        </div>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="request.html">Submit Request</a>
+            <a href="requests.html">My Requests</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="form-container">
+
+            <div class="form-heading">
+
+                <p class="small-text">IT SERVICE DESK</p>
+
+                <h1>Submit a Support Request</h1>
+
+                <p>
+                    Provide details about the issue or service you need
+                    assistance with.
+                </p>
+
+            </div>
+
+
+            <form id="requestForm">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="department">
+                        Department
+                    </label>
+
+                    <input
+                        type="text"
+                        id="department"
+                        placeholder="e.g. Engineering"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="title">
+                        Request Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="e.g. Computer is not connecting to Wi-Fi"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option value="Hardware">
+                                Hardware
+                            </option>
+
+                            <option value="Software">
+                                Software
+                            </option>
+
+                            <option value="Network">
+                                Network
+                            </option>
+
+                            <option value="Account Access">
+                                Account Access
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="priority">
+                            Priority
+                        </label>
+
+                        <select id="priority" required>
+
+                            <option value="">
+                                Select priority
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="6"
+                        placeholder="Describe the problem you are experiencing..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" class="submit-button">
+                    Submit Request
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &lt; Mikod &copy; &gt; 2026
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
